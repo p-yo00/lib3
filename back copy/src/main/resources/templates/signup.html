@@ -35,7 +35,7 @@
         if (form.profileImage.files.length > 0) {
             formData.append('profileImage', form.profileImage.files[0]);
         }
-        const res = await fetch('/api/signup', {
+        const res = await fetch('localhost:8080/api/signup', {
             method: 'POST',
             body: formData
         });

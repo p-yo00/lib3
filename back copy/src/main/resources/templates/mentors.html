@@ -73,7 +73,7 @@ function renderMentors(mentors, myId) {
 function applyMentor(mentorId, btn) {
     btn.disabled = true;
     btn.textContent = '신청 중...';
-    fetch('/api/match-requests', {
+    fetch('localhost:8080/api/match-requests', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
